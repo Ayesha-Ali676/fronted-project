@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    password length between 2-12
+    <input type="number" id="char" min="2" max="12" />
+    <div class="setting">
+      capital letters
+      <input type="checkbox" id="uppercase" value="uppercase" />
+    </div>
+    <div class="setting">
+      small letters
+      <input type="checkbox" id="lowercase" value="lowercase" />
+    </div>
+    <div class="setting">
+      Numbers
+      <input type="checkbox" id="number" value="number" />
+    </div>
+    <div>
+      password: <input type="text" id="password" placeholder="password" />
+      <button onclick="myfun()">generate</button>
+    </div>
+    <script>
+      function myfun() {
+        let char = document.getElementById("char").value;
+
+        let arr;
+        let result = [];
+        let f_res;
+        if (uppercase.checked == true) {
+          arr = [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G",
+            "H",
+            "I",
+            "J",
+            "K",
+            "L",
+            "M",
+            "N",
+            "O",
+            "P",
+            "Q",
+            "R",
+            "S",
+            "T",
+            "U",
+            "V",
+            "W",
+            "X",
+            "Y",
+            "Z",
+          ];
+        } else if (lowercase.checked == true) {
+          arr = [
+            "a",
+            "b",
+            "c",
+            "d",
+            "e",
+            "f",
+            "g",
+            "h",
+            "i",
+            "j",
+            "k",
+            "l",
+            "m",
+            "n",
+            "o",
+            "p",
+            "q",
+            "r",
+            "s",
+            "t",
+            "u",
+            "v",
+            "w",
+            "x",
+            "y",
+            "z",
+          ];
+        } else if (number.checked == true) {
+          arr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+        }
+        for (let i = 0; i < char; i++) {
+          result.push(arr[Math.floor(Math.random() * arr.length)]);
+          f_res = result.join("");
+        }
+        document.getElementById("password").value = f_res;
+        console.log(f_res);
+      }
+    </script>
+  </body>
+</html>

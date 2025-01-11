@@ -1,0 +1,43 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+background-color: rgb(196, 174, 216);
+
+}
+.container{
+    width: 360px;
+    padding: 40px;
+  text-align: center;
+  border: 7px solid rgb(129, 171, 244);
+  background-color: rgb(194, 213, 246);
+}
+.writer{
+    color:  rgb(90, 146, 244);
+    font-size: larger;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.quote{
+    font-size: large;
+}
+  button{
+    background-color: rgb(129, 171, 244);
+    padding: 9.9px;
+    border: 0px;
+    border-radius: 5px;
+    width:30%;
+    font-size:medium;
+    font-weight: bold;
+    color: white;
+
+}
+button:hover{
+    background-color: rgb(90, 133, 208);
+    cursor: pointer;
+}
+
+.btn{
+    padding: 12px;
+}

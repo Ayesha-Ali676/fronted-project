@@ -1,0 +1,75 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+   background-color: rgb(110, 142, 196);
+   color: white;
+}
+.container{
+  width: 360px;
+  padding: 50px;
+text-align: center;
+border: 7px solid rgb(129, 171, 244);
+background-color: rgb(194, 213, 246);
+
+
+}
+.container h1{
+    margin-bottom: 3px;
+    color:rgb(94, 141, 224) ;
+}
+.input input[ type="text"]{
+    padding: 9px;
+    background-color: white;
+    border:3px solid  rgb(129, 171, 244);
+    width: 62%;
+    border-radius: 5px;
+    font-size:medium;
+ 
+}
+input{
+    outline: none;
+}
+button{
+    background-color: rgb(129, 171, 244);
+    padding: 9.9px;
+    border: 0px;
+    border-radius: 5px;
+    width:30%;
+    font-size:medium;
+    font-weight: bold;
+    color: white;
+
+}
+button:hover{
+    background-color: rgb(90, 133, 208);
+    cursor: pointer;
+}
+.list ul{
+    position: relative;
+    color: white;
+    font-size: 19px;
+   background-color: rgb(129, 171, 244); 
+   padding:8px ;
+   border-radius: 5px;
+   text-align: left;
+}
+.list ul i{
+position: absolute;
+right: 10px;
+cursor: pointer;
+}
+#mytime{
+    padding: 9px;
+    background-color: white;
+    border:3px solid  rgb(129, 171, 244);
+    width: 94%;
+    border-radius: 5px;
+    font-size:medium;
+    color: black;
+    font-size:medium;
+    font-weight: bold;
+
+}
+

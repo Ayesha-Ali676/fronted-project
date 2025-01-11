@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coutdown-timer</title>
+    <link rel="stylesheet" href="project1.css">
+</head>
+<body>
+    <div id="coutdown">
+        <p id="timer">
+            <span id="days"></span>
+            <span class="time-unit">Days</span>
+            <span id="hours"></span>
+            <span class="time-unit">hours</span>
+            <span id="minutes"></span>
+            <span class="time-unit">minutes</span>
+            <span id="seconds"></span>
+            <span class="time-unit">seconds</span>
+        </p>
+    </div>
+   <script type="text/javascript">
+const targetDate=new Date("july19, 2025,9:16:25" ).getTime();
+let x= setInterval(function(){
+  const currentTime = new Date().getTime(); 
+  const difference = targetDate - currentTime;
+
+  const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+  document.getElementById("days").innerHTML=days;
+document.getElementById("hours").innerHTML=hours;
+document.getElementById("minutes").innerHTML=minutes;
+document.getElementById("seconds").innerHTML=seconds;
+
+
+  if (difference < 0) {
+      clearInterval(x);
+      document.getElementById("timer").innerText = "The event has started!";
+  }
+},1000);
+
+
+   </script> 
+    
+</body>
+</html>
